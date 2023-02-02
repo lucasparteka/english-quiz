@@ -1,0 +1,1 @@
+export { useQuizType } from "./useQuizType";

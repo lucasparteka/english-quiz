@@ -1,0 +1,5 @@
+.life {
+  padding-left: 6px;
+  background: rgb(255, 228, 230);
+  background: linear-gradient(90deg, rgba(255, 228, 230, 1) 0%, rgba(254, 205, 211, 1) 100%);
+}

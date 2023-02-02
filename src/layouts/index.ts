@@ -1,0 +1,1 @@
+export { QuizLayout } from "./quiz";

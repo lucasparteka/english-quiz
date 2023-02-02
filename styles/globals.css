@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #__next {
+    height: 100%;
+  }
+
+  .btn-primary {
+    @apply text-white focus:outline-none rounded-2xl font-bold px-6 py-3 text-center text-sm uppercase;
+    background: #8524b4;
+  }
+
+  .btn-disabled {
+    @apply bg-neutral-200 cursor-not-allowed text-neutral-400;
+  }
+
+  .btn-outline {
+    @apply border text-violet-800 border-violet-200 rounded-2xl focus:outline-none font-medium px-6 py-3 text-center text-sm;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl p-4;
+  }
+
+  .card-option {
+    @apply rounded-2xl border border-gray-900 py-3 px-4 mb-3 w-full bg-white text-left font-normal text-sm;
+  }
+  
+  .quiz-option {
+    @apply rounded-2xl border-2 p-6 mb-3 w-full bg-white text-left font-medium;
+  }
+
+  .quiz-option-selected {
+    @apply border-2 border-gray-800;
+  }
+
+  .quiz-option-correct {
+    @apply border-2 bg-green-50 border-green-600 text-green-600;
+  }
+
+  .quiz-option-wrong {
+    @apply border-2 bg-red-50 border-red-500 text-red-500;
+  }
+
+  .card-label {
+    @apply text-gray-900;
+  }
+
+  .title {
+    @apply text-xl text-gray-800 font-normal;
+  }
+
+  .subtitle {
+    @apply text-sm text-neutral-400;
+  }
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: rgb(133, 36, 180);
+  background: linear-gradient(180deg, rgba(133, 36, 180, 1) 0%, rgba(106, 27, 161, 1) 50%, rgba(100, 25, 173, 1) 100%);
+  font-family: 'Poppins';
+}
+
+body {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+:root {
+  --animate-duration: 900ms;
+  --animate-delay: 200ms;
+}
